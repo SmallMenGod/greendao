@@ -1,5 +1,6 @@
 package com.bidostar.module1
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -20,6 +21,9 @@ class Module1Activity : AppCompatActivity() {
             ARouter.getInstance().build("/module2/Module2Activity").navigation()
             finish()
         }
-
+        btn_go_test_fragment.setOnClickListener{
+            val intent = Intent(this, FragmentBackActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

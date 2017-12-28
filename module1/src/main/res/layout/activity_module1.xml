@@ -31,4 +31,10 @@
         android:layout_height="wrap_content"
         android:text="跳转MODULE2页面"
         app:layout_constraintTop_toBottomOf="@+id/btn_go_main"/>
+    <Button
+        android:id="@+id/btn_go_test_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转fragment页面"
+        app:layout_constraintTop_toBottomOf="@+id/btn_go_main"/>
 </android.support.constraint.ConstraintLayout>

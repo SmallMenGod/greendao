@@ -17,5 +17,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
+        btn_test_start.setOnClickListener {
+            val intent = Intent()
+            intent.setAction("/module/TestStartActivity")
+            startActivity(intent)
+        }
     }
 }

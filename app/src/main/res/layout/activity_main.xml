@@ -20,4 +20,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <Button
+        android:id="@+id/btn_test_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="测试隐式启动"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        />
+
 </android.support.constraint.ConstraintLayout>
