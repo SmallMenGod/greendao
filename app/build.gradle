@@ -24,6 +24,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+}
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyy-MM-dd-HH-mm')
+    return formattedDate
 }
 
 dependencies {
