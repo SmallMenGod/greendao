@@ -6,7 +6,12 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-
+/**
+ * @author zsh27
+ * @date 2018/1/16
+ * description .
+ * @since 0
+ */
 public class FragmentBackActivity extends AppCompatActivity implements View.OnClickListener {
     private TestFragment mFragment;
     private FragmentManager mManager;
