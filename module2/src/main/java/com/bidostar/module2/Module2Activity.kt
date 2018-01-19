@@ -20,5 +20,6 @@ class Module2Activity : AppCompatActivity() {
             ARouter.getInstance().build("/module1/Module1Activity").navigation()
             finish()
         }
+        tv_module2.setText("Module2Activity:" + BuildConfig.API_URL)
     }
 }

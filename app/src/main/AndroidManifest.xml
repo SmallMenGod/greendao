@@ -24,6 +24,11 @@
         </activity>
         <activity android:name=".DBTestActivity">
         </activity>
+        <activity android:name=".TestDateActivity">
+            <intent-filter>
+                <action android:name="test"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

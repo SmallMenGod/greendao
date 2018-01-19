@@ -21,9 +21,11 @@ class Module1Activity : AppCompatActivity() {
             ARouter.getInstance().build("/module2/Module2Activity").navigation()
             finish()
         }
-        btn_go_test_fragment.setOnClickListener{
+        btn_go_test_fragment.setOnClickListener {
             val intent = Intent(this, FragmentBackActivity::class.java)
             startActivity(intent)
         }
+//        tv_module1.setText("Module1Activity:" + BuildConfig.API_URL)
+
     }
 }

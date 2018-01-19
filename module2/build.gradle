@@ -22,11 +22,46 @@ android {
 
     }
 
+    signingConfigs {
+        release {
+            keyAlias 'TestKotlin'
+            keyPassword '521621'
+            storeFile file('test_kotlin.jks')
+            storePassword '521621'
+        }
+        debug {
+            keyAlias 'TestKotlin'
+            keyPassword '521621'
+            storeFile file('test_kotlin.jks')
+            storePassword '521621'
+        }
+        beta {
+            keyAlias 'TestKotlin'
+            keyPassword '521621'
+            storeFile file('test_kotlin.jks')
+            storePassword '521621'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
+            buildConfigField("String", "API_URL", "\"api.bidostar.com\"")
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
+        debug {
+            minifyEnabled false
+            buildConfigField("String", "API_URL", "\"alpha.bidostar.com\"")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        beta {
+            minifyEnabled false
+            buildConfigField("String", "API_URL", "\"beta.bidostar.com\"")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.beta
+        }
+
     }
 
 }

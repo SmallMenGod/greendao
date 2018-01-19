@@ -3,6 +3,7 @@ package com.bidostar.testkotlin
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,5 +23,8 @@ class MainActivity : AppCompatActivity() {
             intent.setAction("/module/TestStartActivity")
             startActivity(intent)
         }
+        Toast.makeText(this, "MainAcivity:" + BuildConfig.API_URL, Toast.LENGTH_SHORT).show()
+        tv_test.setText("MainAcivity:" + BuildConfig.API_URL)
+
     }
 }

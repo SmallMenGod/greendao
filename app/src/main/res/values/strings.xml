@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TestKotlin</string>
+    <string name="time_just_now">刚刚</string>
+    <string name="time_minute">%d分钟前</string>
+    <string name="time_hour">%d小时前</string>
+    <string name="time_day">%d天前</string>
+    <string name="time_month">%d月前</string>
+    <string name="time_year">%d年前</string>
+    <string name="time_yesterday_hour_minute">昨天 %s</string>
 </resources>
